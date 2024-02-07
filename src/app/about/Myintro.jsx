@@ -13,8 +13,8 @@ const Myintro = () => {
       <div className="intro-content pb-3">
         <h2 className='intro-tagline text-purple-200 mb-8 text-focus-in'>I develop not for the you as client but for your users</h2>
         <div className="myname-profession mb-8">
-          <h3 className='text-xl tracking-wide mb-2 text-purple-200 font-semibold'>Tom Raclift</h3>
-          <h4 className='text-orange-300 text-lg font-medium'>Senior UI UX Designer</h4>
+          <h3 className='text-xl tracking-wide mb-2 text-purple-200 font-semibold'>Muhammad Qammar</h3>
+          <h4 className='text-orange-300 text-lg font-medium'>Senior Full Stack Developer & Designer</h4>
         </div> 
         <div className="intro-buttons flex gap-3 items-center">
           <Hirebtn/>

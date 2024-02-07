@@ -1,9 +1,12 @@
 import HomeComponentsHeading from '@/components/Childcomps/HomeComponentsHeading'
 import React from 'react'
 import Hirebtn from '@/components/Childcomps/Hirebtn'
-import tool1 from "../../assets/images/figma.svg"
-import tool2 from "../../assets/images/react.svg"
-import tool3 from "../../assets/images/next-js.svg"
+import figma from "../../assets/images/figma.svg"
+import vsCode from "../../assets/images/vs-code.svg"
+import git from "../../assets/images/git.svg"
+import gitHub from "../../assets/images/github-desktop.svg"
+import npm from "../../assets/images/npm.svg"
+import redux from "../../assets/images/redux-original.svg"
 import Experties from '@/components/Childcomps/Experties'
 import "./About.css"
 import Startups from '@/components/Childcomps/Startups'
@@ -11,28 +14,39 @@ import AosAnimation from '@/utils/AosAnimation'
 
 const tools =[
     {
-        toolImage:tool1,
-        toolName:"Figma",
-        toolSkill:"90%"
+        toolImage:figma,
+        toolName:"Figma"
     },
     {
-        toolImage:tool2,
-        toolName:"React.js",
-        toolSkill:"95%"
+        toolImage:vsCode,
+        toolName:"Vs Code"
     },
     {
-        toolImage:tool3,
-        toolName:"Next.js",
-        toolSkill:"95%"
+        toolImage:git,
+        toolName:"Git"
+    },
+    {
+      toolImage:gitHub,
+      toolName:"GitHub"
+    },
+    {
+      toolImage:npm,
+      toolName:"NPM"
+    },
+    {
+      toolImage:redux,
+      toolName:"Redux"
     },
 ]
 const skillsData = [
-    { skillName: 'HTML', percentage: '90%' },
-    { skillName: 'CSS', percentage: '85%' },
+    { skillName: 'HTML', percentage: '99%' },
+    { skillName: 'CSS / Sass/ Bootstrap/ Tailwind', percentage: '90%' },
+    { skillName: 'Web Designing', percentage: '90%' },
     { skillName: 'JavaScript', percentage: '92%' },
     { skillName: 'React.js', percentage: '95%' },
-    { skillName: 'Next.js', percentage: '75%' },
-    { skillName: 'Reducx Toolkit', percentage: '80%' },
+    { skillName: 'Next.js', percentage: '90%' },
+    { skillName: 'Angular.js', percentage: '90%' },
+    { skillName: 'Database', percentage: '90%' },
   ];
 const Myabilities = () => {
   return (
@@ -48,14 +62,13 @@ const Myabilities = () => {
             </div>
             <div className="abilities-section2">
             <h4 className='text-purple-300 text-xl font-medium mb-5'>What App I Use</h4>
-            <h3 className='text-purple-200 mb-5 font-semibold text-3xl tracking-wide'>Mastered In 3 Popular App For Every Designer</h3>
-            <p className='text-purple-300 mb-8 text-base font-normal'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam qui esse numquam dolores! Repellendus eos deleniti quas, dolor amet ea perspiciatis exercitationem repudiandae dolorem, illo cumque sequi distinctio nam doloremque.</p>
+            <h3 className='text-purple-200 mb-5 font-semibold text-3xl tracking-wide'>Mastered In Popular Tools For Every Developer</h3>
+            <p className='text-purple-300 mb-8 text-base font-normal'>showcases my proficiency in essential developer tools and platforms widely used in the industry. From version control with Git and collaborative coding on GitHub to project management with Jira, I excel in navigating these foundational tools that are indispensable for developers across various domains.</p>
             <div className="skills-on-tools flex flex-wrap gap-10 items-end">
             {tools.map((tool, index) => (
               <div className="single-tool" key={index}>
                 <img src={tool.toolImage.src} alt={tool.toolName} className='w-12 mb-3'/>
                 <p className="tool-name text-base font-medium tracking-wider text-purple-200 mb-2">{tool.toolName}</p>
-                <p className="skillpercentage text-purple-400 text-sm font-semibold tracking-wide">{tool.toolSkill}</p>
               </div>
             ))}
             <Hirebtn/>

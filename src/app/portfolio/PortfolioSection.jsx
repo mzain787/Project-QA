@@ -35,12 +35,10 @@ const PortfolioSection = () => {
     <section className="portfolio-section wrapper component-padding">
       <div className="portfolio-heading">
         <h1 className="portfolio-main-heading text-purple-200 font-semibold">
-          I Make Digital Products For Your Needs, And Proudly I&#39;ll Show You
+        Explore My Dynamic Full-Stack Portfolio and Experience Innovation Unleashed.
         </h1>
         <p className="portfolio-main-description text-purple-200 text-base font-normal mb-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum hic
-          optio, quae laborum eos, distinctio autem harum iusto, vero accusamus
-          at modi veniam atque sapiente sunt alias ducimus non qui.
+        From elegant front-end designs to robust back-end functionalities, my portfolio showcases a diverse range of web development projects tailored to exceed client expectations. Each project is a testament to my passion for crafting user-centric experiences and harnessing the latest technologies to bring visions to life.
         </p>
         <div className="portfolio-main-buttons">
           <button className="newproject W-40 bg-orange-200 text-black font-semibold p-3 heartbeat">
