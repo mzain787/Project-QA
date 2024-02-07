@@ -9,20 +9,24 @@ import Startups from "@/components/Childcomps/Startups";
 const Contact = () => {
   const accordionData = [
     {
-      title: "Accordion Item 1",
-      content: "Content for Accordion Item 1",
+      title: "What services do you offer?",
+      content: "I provide end-to-end web development services, including front-end development, back-end development, database management, API integration, and Web Designing.",
     },
     {
-      title: "Accordion Item 2",
-      content: "Content for Accordion Item 2",
+      title: "What technologies do you specialize in?",
+      content: "I specialize in a range of technologies including Figma, HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, SQL, and more.",
     },
     {
-      title: "Accordion Item 3",
-      content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eaque in laudantium facilis, fuga nisi reiciendis iure maxime, voluptates vitae itaque at unde veniam nobis quidem, consectetur deserunt voluptatem error",
+      title: "How do you approach a new project?",
+      content: "I start by thoroughly understanding the project requirements and goals. Then, I plan out the architecture, choose the appropriate technologies, and proceed with agile development methodologies to ensure timely delivery and flexibility for any necessary adjustments.",
     },
     {
-      title: "Accordion Item 4",
-      content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident eaque in laudantium facilis, fuga nisi reiciendis iure maxime, voluptates vitae itaque at unde veniam nobis quidem, consectetur deserunt voluptatem error",
+      title: "Preferred communication method during project?",
+      content: "I am flexible with communication methods and adapt to my clients' preferences. Whether it's email, phone calls, video conferences, or project management tools, I ensure transparent and efficient communication throughout the project lifecycle.",
+    },
+    {
+      title: "What is your pricing structure?",
+      content: "My pricing structure varies depending on the scope and complexity of the project. I provide personalized quotes after discussing the project requirements in detail with the client.",
     },
   ];
 
