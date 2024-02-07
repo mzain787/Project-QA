@@ -5,7 +5,7 @@ import figma from "../../assets/images/figma.svg"
 import vsCode from "../../assets/images/vs-code.svg"
 import git from "../../assets/images/git.svg"
 import gitHub from "../../assets/images/github-desktop.svg"
-import npm from "../../assets/images/npm.svg"
+import node from "../../assets/images/nodejs.svg"
 import redux from "../../assets/images/redux-original.svg"
 import Experties from '@/components/Childcomps/Experties'
 import "./About.css"
@@ -30,8 +30,8 @@ const tools =[
       toolName:"GitHub"
     },
     {
-      toolImage:npm,
-      toolName:"NPM"
+      toolImage:node,
+      toolName:"Node"
     },
     {
       toolImage:redux,
@@ -45,7 +45,8 @@ const skillsData = [
     { skillName: 'JavaScript', percentage: '92%' },
     { skillName: 'React.js', percentage: '95%' },
     { skillName: 'Next.js', percentage: '90%' },
-    { skillName: 'Angular.js', percentage: '90%' },
+    { skillName: 'Node.js', percentage: '95%' },
+    { skillName: 'Angular.js', percentage: '80%' },
     { skillName: 'Database', percentage: '90%' },
   ];
 const Myabilities = () => {
