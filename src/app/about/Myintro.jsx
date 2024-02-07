@@ -1,7 +1,7 @@
 import React from 'react'
 import "./About.css"
 // import manImg from "../../assets/images/journey-man.png"
-import manImg from "../../assets/images/qa1.png"
+import manImg from "../../assets/images/qa22.png"
 import Hirebtn from '@/components/Childcomps/Hirebtn'
 const Myintro = () => {
   return (

@@ -269,6 +269,7 @@
   /* Hero Section */
   .hero-image {
     top: 500px;
+    right: 50px;
   }
   .basic-padding {
     padding: 60px 60px 60px 100px;

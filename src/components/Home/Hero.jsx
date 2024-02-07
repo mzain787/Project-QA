@@ -3,7 +3,7 @@ import React from "react";
 import "../Home/Home.css";
 import fiverr from "../../assets/images/fi.png";
 import upwork from "../../assets/images/up.png";
-import man from "../../assets/images/qa1.png";
+import man from "../../assets/images/qa22.png";
 import AOSAnimation from "@/utils/AosAnimation";
 import Image from "next/image";
 const Hero = () => {
@@ -36,7 +36,7 @@ const Hero = () => {
           <div>
             <div className="hero-content">
               <p className="text-sm font-semibold text-purple-200 mb-10">
-                👋 DESIGNING THINGS FOR HUMAN
+                👋 DEVELOPING THINGS FOR HUMAN
               </p>
               <h1 className="hero-heading text-purple-200 mb-12 bounce-top">
                 Talented Developer{" "}
