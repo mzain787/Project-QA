@@ -21,7 +21,7 @@ const PortfolioSection = () => {
     {
       ppImage:currikistudio,
       pprojectName:"Curriki Studio",
-      ppLink:"https://www.popstack.ai/",
+      ppLink:"https://dev.currikistudio.org/",
     },
     {
       ppImage:fertilityanswers,
@@ -74,14 +74,14 @@ const PortfolioSection = () => {
       ppLink:"https://www.octue.com/",
     },
     {
-      ppImage:popstack,
-      pprojectName:"Popstack",
-      ppLink:"https://www.popstack.ai/",
-    },
-    {
       ppImage:banban,
       pprojectName:"banbanmedia",
       ppLink:"https://banbanmedia.co/",
+    },
+    {
+      ppImage:popstack,
+      pprojectName:"Popstack",
+      ppLink:"https://www.popstack.ai/",
     },
   ]
   return (
