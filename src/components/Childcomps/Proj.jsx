@@ -9,7 +9,7 @@ const Proj = ({projectCategory,projectDescription,projectClient,projectImg,proje
       
       <div className="project-image">
       <AosAnimation type="flip-up" duration={1000}>
-        <Image src={projectImg} className="w-full"/>
+        <Image src={projectImg} alt="project-image" className="w-full"/>
       </AosAnimation>
       </div>
       

@@ -3,7 +3,7 @@ import Sidebar from "../components/Sidebar/Sidebar";
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
 export const metadata = {
-  title: "M. Qammar",
+  title: "Muhammad Qammar",
   description: "Full-Stack Web App Developer",
 };
 

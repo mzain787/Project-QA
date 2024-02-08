@@ -72,7 +72,7 @@ const closeMenu = () => {
         {/* Left side with logo and options */}
         <div className="flex items-center">
           <a href="/">
-          <Image src={logo} alt="Logo" className="h-12 w-32 mr-8 pl-4 cursor-pointer"/>
+          <Image src={logo} alt="image" className="h-12 w-32 mr-8 pl-4 cursor-pointer"/>
           </a>
           <nav ref={menuRef} className={`flex items-center nav-items scale-in-ver-top scale-out-top ${menuOpen ? "open" : "close"}`}>
             <div className="nav-options">

@@ -106,7 +106,7 @@ const Sidebar = () => {
          </div>
          <div className="sidebar-content-data">
          <div className="brand-details mb-16">
-          <Image src={logo} alt="logo" className="h-12 w-32 mb-16" />
+          <Image src={logo} alt="footer-logo" className="h-12 w-32 mb-16" />
           <h3 className="text-purple-200 text-2xl mb-7 font-medium">Contact Me Today</h3>
           <h4 className="text-orange-300 text-xl font-semibold">hi@crevidy.dom</h4>
          </div>

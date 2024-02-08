@@ -6,7 +6,7 @@ const TeamSection = ({ t_image, t_name, t_job }) => {
     <div className="shadow-lg team-card" style={{background:"#1A1826"}}>
       <Image
         src={t_image}
-        alt={`${t_name}'s profile`}
+        alt="team-image"
         className="w-full h-auto team-image"
       />
       <div className="team-member-info p-4">
