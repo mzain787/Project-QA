@@ -6,6 +6,7 @@ import PageHeading from "@/components/Childcomps/PageHeading/PageHeading";
 import MyAccordionComponent from "@/components/Childcomps/MyAccordianComponent/MyAccordianComponent";
 import HomeComponentsHeading from "@/components/Childcomps/HomeComponentsHeading";
 import Startups from "@/components/Childcomps/Startups";
+import Image from "next/image";
 const Contact = () => {
   const accordionData = [
     {
@@ -62,7 +63,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact-image self-end">
-            <img src={contactImg.src} alt="" className="w-full" />
+            <Image src={contactImg} alt="contact-image" className="w-full" />
           </div>
         </div>
         <Startups/>

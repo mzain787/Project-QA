@@ -2,13 +2,14 @@ import React from "react";
 import "../Home/Home.css";
 import star from "../../assets/images/star.svg";
 import AosAnimation from "@/utils/AosAnimation";
+import Image from "next/image";
 const Proj = ({projectCategory,projectDescription,projectClient,projectImg,projectRating,reverseOrder, showcaseLink}) => {
   return (
     <div className={`our-project flex items-center gap-10 ${reverseOrder ? 'flex-row-reverse' : 'flex-row'}`}>
       
       <div className="project-image">
       <AosAnimation type="flip-up" duration={1000}>
-        <img src={projectImg.src} className="w-full"/>
+        <Image src={projectImg} className="w-full"/>
       </AosAnimation>
       </div>
       
@@ -52,11 +53,11 @@ const Proj = ({projectCategory,projectDescription,projectClient,projectImg,proje
           <div className="stars flex gap-2 items-center">
             <span className="text-purple-200">({projectRating})</span>
             <div className="star-imgs flex gap-1">
-              <img className="w-4" src={star.src} />
-              <img className="w-4" src={star.src} />
-              <img className="w-4" src={star.src} />
-              <img className="w-4" src={star.src} />
-              <img className="w-4" src={star.src} />
+              <Image className="w-4" src={star} alt="star"/>
+              <Image className="w-4" src={star} alt="star"/>
+              <Image className="w-4" src={star} alt="star"/>
+              <Image className="w-4" src={star} alt="star"/>
+              <Image className="w-4" src={star} alt="star"/>
             </div>
           </div>
           <span>

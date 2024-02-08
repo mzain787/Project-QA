@@ -2,13 +2,14 @@ import AosAnimation from "@/utils/AosAnimation";
 import "./PortfolioSection.css";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const PortfolioProject = ({ pprojectName, ppLink, ppImage }) => {
   return (
     <section className="portfolio-project mb-10">
       <AosAnimation type="flip-up" duration={1000}>
       <div className="portfolio-project-image mb-3 w-full">
-        <img src={ppImage.src} className="w-full" alt="image"/>
+        <Image src={ppImage} className="w-full" alt="image"/>
       </div>
       <div className="portfolio-project-details flex justify-between items-start">
         <div className="naming">

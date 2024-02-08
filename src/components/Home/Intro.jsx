@@ -7,6 +7,7 @@ import HomeComponentsHeading from '../Childcomps/HomeComponentsHeading';
 import Hirebtn from '../Childcomps/Hirebtn';
 import Startups from '../Childcomps/Startups';
 import AosAnimation from '@/utils/AosAnimation';
+import Image from 'next/image';
 const Intro = () => {
   return (
     <>
@@ -27,7 +28,7 @@ const Intro = () => {
     <div className="intro-bottom">
         <div className="intro-video-back-img w-full h-auto">
             <AosAnimation type="zoom-in">
-            <img src={videobck.src} alt="video-thumbnail"/>
+            <Image src={videobck} alt="video-thumbnail"/>
             </AosAnimation>
             <a href="/" className="video-play-iocn w-12 h-12 rounded-full bg-orange-300"><FontAwesomeIcon className='absolute translate-x-4 translate-y-3 text-2xl' icon={faPlay} /></a>
         </div>

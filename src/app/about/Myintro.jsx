@@ -1,14 +1,15 @@
 import React from 'react'
 import "./About.css"
-// import manImg from "../../assets/images/journey-man.png"
 import manImg from "../../assets/images/qa22.png"
 import Hirebtn from '@/components/Childcomps/Hirebtn'
+import Image from 'next/image'
+
 const Myintro = () => {
   return (
     <section className="myintro">
       <div className="wrapper flex gap-5 items-center about-intro">
       <div className="intro-image">
-        <img src={manImg.src} alt="man-image" className='w-full'/>
+        <Image src={manImg} alt="man-image" className='w-full'/>
       </div>
       <div className="intro-content pb-3">
         <h2 className='intro-tagline text-purple-200 mb-8 text-focus-in'>I develop not for the you as client but for your users</h2>

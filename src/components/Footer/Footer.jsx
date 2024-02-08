@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import "./Footer.css";
 import MyForm from '../Childcomps/MyForm/MyForm';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import logo from "../../assets/images/logo.png";
@@ -59,7 +60,7 @@ const Footer = () => {
         </div>
         <div className="footer-bottom flex justify-between items-center">
           <div className="footer-bottom-left flex gap-4 items-center">
-            <a href="/"><img src={logo.src} alt="logo-img" className='h-12 w-32'/></a>
+            <a href="/"><Image src={logo} alt="logo-img" className='h-12 w-32'/></a>
             <p className="copyright text-purple-400">© 2024 Crevidy <span className='text-orange-300'>by Deverust Studio</span></p>
           </div>
           <div className="footer-bottom-right">

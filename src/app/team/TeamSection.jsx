@@ -1,10 +1,11 @@
 import React from 'react';
 import "./TeamSection.css"
+import Image from 'next/image';
 const TeamSection = ({ t_image, t_name, t_job }) => {
   return (
     <div className="shadow-lg team-card" style={{background:"#1A1826"}}>
-      <img
-        src={t_image.src}
+      <Image
+        src={t_image}
         alt={`${t_name}'s profile`}
         className="w-full h-auto team-image"
       />

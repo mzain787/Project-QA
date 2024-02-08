@@ -3,6 +3,7 @@ import "../Home/Home.css"
 import manPic from "../../assets/images/journey-man.png"
 import { MyExperience } from '../Childcomps/Myskill'
 import HomeComponentsHeading from '../Childcomps/HomeComponentsHeading'
+import Image from 'next/image'
 const Journey = () => {
   const experiences = [
     {
@@ -41,7 +42,7 @@ const Journey = () => {
     <section className="my-experience-journey">
      <div className="wrapper flex justify-start gap-5 items-end journey-main">
         <div className="journey-image">
-            <img src={manPic.src} alt="man-image" className='w-full'/>
+            <Image src={manPic} alt="man-image" className='w-full'/>
         </div>
      <div className="journey-content pb-10">
      <HomeComponentsHeading smallheading="⏱️ MY JOURNEY & TRACK RECORD" heading="Tons of" subheading="Experiences"/>

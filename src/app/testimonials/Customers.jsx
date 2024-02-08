@@ -2,8 +2,8 @@ import React from 'react'
 import "./TestimonialsComponent.css"
 import customerImg from "../../assets/images/testimonial-image.png"
 import customerImg2 from "../../assets/images/man-testimonial2.jpg"
-
 import HomeComponentsHeading from '@/components/Childcomps/HomeComponentsHeading'
+import Image from 'next/image'
 const Customers = () => {
   return (
     <div className="customers-section wrapper component-padding">
@@ -22,7 +22,7 @@ const Customers = () => {
         <div className="customer-images flex items-end">
             <div className="customer-images-part1">
              <div className='customer-happy-image'>
-             <img src={customerImg.src} alt="client-image" className='w-full h-full'/>
+             <Image src={customerImg} alt="client-image" className='w-full h-full'/>
              </div>
             </div>
             <div className="customer-images-part2">
@@ -30,17 +30,17 @@ const Customers = () => {
             <div className='bg-transparent customer-happy-image'></div>
             </div>
             <div className="customer-images-part3">
-            <div className='customer-happy-image'><img src={customerImg2.src} alt="client-image" className='w-full h-full'/></div>
+            <div className='customer-happy-image'><Image src={customerImg2} alt="client-image" className='w-full h-full'/></div>
             <div className='bg-transparent customer-happy-image'></div>
             <div className='bg-orange-300 customer-happy-image'>
-            <img src={customerImg2.src} alt="client-image" className='w-full h-full'/>
+            <Image src={customerImg2} alt="client-image" className='w-full h-full'/>
             </div>
             </div>
             <div className="customer-images-part4">
             <div className='bg-orange-300 customer-happy-image'></div>
             <div className='bg-transparent customer-happy-image'></div>
             <div className='bg-orange-300 customer-happy-image '>
-            <img src={customerImg.src} alt="client-image" className='w-full h-full'/>    
+            <Image src={customerImg} alt="client-image" className='w-full h-full'/>    
             </div>        
             <div className='bg-transparent customer-happy-image'></div>
             </div>

@@ -4,6 +4,7 @@ import workImg3 from "../../assets/images/blog-img2.png"
 import workImg2 from "../../assets/images/blog-img1.png"
 import workImg4 from "../../assets/images/blog-img3.png"
 import workImg1 from "../../assets/images/blog-img4.png"
+import Image from 'next/image'
 const MyWork = () => {
   return (
    <div className="mywork wrapper component-padding">
@@ -12,15 +13,15 @@ const MyWork = () => {
     <div className="my-work-images flex">
         <div className="images-section1 flex flex-col">
             <div className="images-section1-top flex items-center">
-                <img src={workImg1.src} alt="image" className='w-1/2'/>
-                <img src={workImg2.src} alt="image" className='w-1/2'/>
+                <Image src={workImg1} alt="image" className='w-1/2'/>
+                <Image src={workImg2} alt="image" className='w-1/2'/>
             </div>
             <div className="images-section1-bottom">
-            <img src={workImg3.src} alt="image"  className='w-full h-80' />
+            <Image src={workImg3} alt="image"  className='w-full h-80' />
             </div>
         </div>
         <div className="images-section2">
-            <img src={workImg4.src} alt="image"  className='w-full h-full'/>
+            <Image src={workImg4} alt="image"  className='w-full h-full'/>
         </div>
     </div>
    </div>

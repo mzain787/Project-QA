@@ -6,16 +6,17 @@ import startup3 from "../../assets/images/lightmedia.png"
 import startup4 from "../../assets/images/forward.png"
 import startup5 from "../../assets/images/codeguy.png"
 import startup6 from "../../assets/images/starapp.png"
+import Image from 'next/image'
 const Startups = () => {
   return (
     <section className="startups p-0">
     <div className="hero-startups flex flex-wrap justify-center gap-4 w-full">
-      <img src={startup1.src} alt="startup1-img" className='w-full'/>
-      <img src={startup2.src} alt="startup2-img" className='w-full'/>
-      <img src={startup3.src} alt="startup3-img" className='w-full'/>
-      <img src={startup4.src} alt="startup4-img" className='w-full'/>
-      <img src={startup5.src} alt="startup5-img" className='w-full'/>
-      <img src={startup6.src} alt="startup6-img" className='w-full'/>
+      <Image src={startup1} alt="startup1-img" className='w-full'/>
+      <Image src={startup2} alt="startup2-img" className='w-full'/>
+      <Image src={startup3} alt="startup3-img" className='w-full'/>
+      <Image src={startup4} alt="startup4-img" className='w-full'/>
+      <Image src={startup5} alt="startup5-img" className='w-full'/>
+      <Image src={startup6} alt="startup6-img" className='w-full'/>
       </div>
     </section>
   )

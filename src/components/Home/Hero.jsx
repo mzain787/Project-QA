@@ -14,8 +14,8 @@ const Hero = () => {
           <p className="text-pruple-200 tracking-wide text-base font-medium">
             Top Rated At
           </p>
-          <img
-            src={fiverr.src}
+          <Image
+            src={fiverr}
             alt="fiverr-logo"
             className="w-10 h-10 shake-vertical"
           />
@@ -25,8 +25,8 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-             <img
-            src={upwork.src}
+             <Image
+            src={upwork}
             alt="upwork-logo"
             className="w-10 h-10 shake-vertical"
           />

@@ -11,6 +11,7 @@ import Experties from '@/components/Childcomps/Experties'
 import "./About.css"
 import Startups from '@/components/Childcomps/Startups'
 import AosAnimation from '@/utils/AosAnimation'
+import Image from 'next/image'
 
 const tools =[
     {
@@ -68,7 +69,7 @@ const Myabilities = () => {
             <div className="skills-on-tools flex flex-wrap gap-10 items-end">
             {tools.map((tool, index) => (
               <div className="single-tool" key={index}>
-                <img src={tool.toolImage.src} alt={tool.toolName} className='w-12 mb-3'/>
+                <Image src={tool.toolImage} alt={tool.toolName} className='w-12 mb-3'/>
                 <p className="tool-name text-base font-medium tracking-wider text-purple-200 mb-2">{tool.toolName}</p>
               </div>
             ))}
