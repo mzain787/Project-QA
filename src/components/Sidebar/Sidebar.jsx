@@ -1,6 +1,7 @@
 "use client"
 import React, {useState, useRef, useEffect} from "react";
 import "./Sidebar.css"
+import Link from "next/link";
 import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { faPlay , faArrowLeft, faTimes} from "@fortawesome/free-solid-svg-icons";
@@ -125,30 +126,30 @@ const Sidebar = () => {
          <div className="social-media-section">
           <h2 className="text-base font-semibold tracking-widest text-purple-200 mb-6">FOLLOW ME</h2>
           <div className="flex items-center">
-          <a href="#" className="text-white mx-2">
+          <Link href="/" className="text-white mx-2">
             <FontAwesomeIcon
               icon={faFacebook}
               className="text-xl text-purple-200 hover:text-orange-300 "
             />
-          </a>
-          <a href="#" className="text-white mx-2">
+          </Link>
+          <Link href="/" className="text-white mx-2">
             <FontAwesomeIcon
               icon={faTwitter}
               className="text-xl text-purple-200 hover:text-orange-300"
             />
-          </a>
-          <a href="#" className="text-white mx-2">
+          </Link>
+          <Link href="/" className="text-white mx-2">
             <FontAwesomeIcon
               icon={faInstagram}
               className="text-xl text-purple-200 hover:text-orange-300"
             />
-          </a>
-          <a href="#" className="text-white mx-2">
+          </Link>
+          <Link href="/" className="text-white mx-2">
             <FontAwesomeIcon
               icon={faLinkedin}
               className="text-xl text-purple-200 hover:text-orange-300"
             />
-          </a>
+          </Link>
         </div>
          </div>
          </div>

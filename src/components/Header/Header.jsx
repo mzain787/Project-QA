@@ -1,7 +1,6 @@
 // Header.js
 "use client"
 import "./Header.css";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState, useEffect, useRef} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,6 +14,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -120,30 +120,30 @@ const closeMenu = () => {
 
         {/* Right side with social media icons */}
         <div className="flex items-center social-media">
-          <a href="#" className="text-white mx-2">
+          <Link href="/" className="text-white mx-2">
             <FontAwesomeIcon
               icon={faFacebook}
               className="text-xl text-purple-200 hover:text-orange-300 "
             />
-          </a>
-          <a href="#" className="text-white mx-2">
+          </Link>
+          <Link href="/" className="text-white mx-2">
             <FontAwesomeIcon
               icon={faTwitter}
               className="text-xl text-purple-200 hover:text-orange-300"
             />
-          </a>
-          <a href="#" className="text-white mx-2">
+          </Link>
+          <Link href="/" className="text-white mx-2">
             <FontAwesomeIcon
               icon={faInstagram}
               className="text-xl text-purple-200 hover:text-orange-300"
             />
-          </a>
-          <a href="#" className="text-white mx-2">
+          </Link>
+          <Link href="/" className="text-white mx-2">
             <FontAwesomeIcon
               icon={faLinkedin}
               className="text-xl text-purple-200 hover:text-orange-300"
             />
-          </a>
+          </Link>
         </div>
 
         {/* hamburger */}

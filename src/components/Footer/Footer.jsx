@@ -12,6 +12,7 @@ import {
     faInstagram,
     faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import Link from 'next/link';
 
 const Footer = () => {
   const [showTopButton, setShowTopButton] = useState(false);
@@ -65,30 +66,30 @@ const Footer = () => {
           </div>
           <div className="footer-bottom-right">
             <div className="flex items-center">
-              <a href="#" className="text-white mx-2">
+              <Link href="/" className="text-white mx-2">
                 <FontAwesomeIcon
                   icon={faFacebook}
                   className="text-xl text-purple-200 hover:text-orange-300 "
                 />
-              </a>
-              <a href="#" className="text-white mx-2">
+              </Link>
+              <Link href="/" className="text-white mx-2">
                 <FontAwesomeIcon
                   icon={faTwitter}
                   className="text-xl text-purple-200 hover:text-orange-300"
                 />
-              </a>
-              <a href="#" className="text-white mx-2">
+              </Link>
+              <Link href="/" className="text-white mx-2">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   className="text-xl text-purple-200 hover:text-orange-300"
                 />
-              </a>
-              <a href="#" className="text-white mx-2">
+              </Link>
+              <Link href="/" className="text-white mx-2">
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   className="text-xl text-purple-200 hover:text-orange-300"
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
