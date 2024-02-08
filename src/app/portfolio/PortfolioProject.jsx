@@ -1,6 +1,7 @@
 import AosAnimation from "@/utils/AosAnimation";
 import "./PortfolioSection.css";
 import React from "react";
+import Link from "next/link";
 
 const PortfolioProject = ({ pprojectName, ppLink, ppImage }) => {
   return (
@@ -18,7 +19,7 @@ const PortfolioProject = ({ pprojectName, ppLink, ppImage }) => {
             {pprojectName}
           </h3>
         </div>
-        <a href={ppLink} className="text-sm text-orange-200 pb-1 border-b border-orange-200">ShowCase</a>
+        <Link href={ppLink} target="_blank" className="text-sm text-orange-200 pb-1 border-b border-orange-200">ShowCase</Link>
       </div>
       </AosAnimation>
     </section>

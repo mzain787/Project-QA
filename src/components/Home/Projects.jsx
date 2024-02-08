@@ -63,7 +63,7 @@ const Projects = () => {
           ))}
         </div>
         <div className="portfolio-button text-center">
-          <button className='text-2xl leading-8 font-mono text-purple-400'><Link href="/portfolio">See My Portfolio For More Projects </Link><span><FontAwesomeIcon icon={faArrowAltCircleRight} className='shake-horizontal'/></span></button>
+          <button className='text-xl leading-8 font-mono text-purple-400 mt-10'><Link href="/portfolio">See My Portfolio For More Projects </Link><span><FontAwesomeIcon icon={faArrowAltCircleRight} className='shake-horizontal'/></span></button>
         </div>
       </section>
     </>

@@ -7,8 +7,52 @@ import securewiser from "../../assets/images/securewiser.png";
 import upcomer from "../../assets/images/upcomer.png"
 import eraofwe from "../../assets/images/eraofwe.png"
 import popstack from "../../assets/images/popstack.png"
+import ocute from "../../assets/images/ocute.png"
+import currikistudio from "../../assets/images/currikistudio.png"
+import cyscale from "../../assets/images/cyscale.png"
+import strum from "../../assets/images/strum.png"
+import digitalx from "../../assets/images/digitalx.png"
+import fertilityanswers from "../../assets/images/fertilityanswers.png"
+import topia from "../../assets/images/topiahq.png"
+import polesonearth from "../../assets/images/polesonearth.png"
+import banban from "../../assets/images/banban.png"
 const PortfolioSection = () => {
   const pprojects = [
+    {
+      ppImage:currikistudio,
+      pprojectName:"Curriki Studio",
+      ppLink:"https://www.popstack.ai/",
+    },
+    {
+      ppImage:fertilityanswers,
+      pprojectName:"Fertility Answers",
+      ppLink:"https://fertility.medanswers.com/",
+    },
+    {
+      ppImage:topia,
+      pprojectName:"Topia",
+      ppLink:"https://topiahq.netlify.app/",
+    },
+    {
+      ppImage:polesonearth,
+      pprojectName:"Poles ON Earth",
+      ppLink:"https://polesonearth.com/",
+    },
+    {
+      ppImage:cyscale,
+      pprojectName:"cyscale",
+      ppLink:"https://cyscale.com/",
+    },
+    {
+      ppImage:digitalx,
+      pprojectName:"digitalx",
+      ppLink:"https://digitalx.netlify.app/",
+    },
+    {
+      ppImage:strum,
+      pprojectName:"Strum",
+      ppLink:"https://strum-app.netlify.app/",
+    },
     {
       ppImage:securewiser,
       pprojectName:"Secure Wiser",
@@ -25,9 +69,19 @@ const PortfolioSection = () => {
       ppLink:"https://www.eraofwe.com/",
     },
     {
+      ppImage:ocute,
+      pprojectName:"Secure Wiser",
+      ppLink:"https://www.octue.com/",
+    },
+    {
       ppImage:popstack,
-      pprojectName:"popstack",
+      pprojectName:"Popstack",
       ppLink:"https://www.popstack.ai/",
+    },
+    {
+      ppImage:banban,
+      pprojectName:"banbanmedia",
+      ppLink:"https://banbanmedia.co/",
     },
   ]
   return (
