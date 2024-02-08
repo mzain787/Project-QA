@@ -1,47 +1,49 @@
 import React from 'react';
 import "./Home.css";
+import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 import HomeComponentsHeading from '../Childcomps/HomeComponentsHeading';
 import Proj from '../Childcomps/Proj';
-import projImg1 from "../../assets/images/app-img1.png";
-import projImg2 from "../../assets/images/ecommerce.png"
-import projImg3 from "../../assets/images/accomodation.png"
-import projImg4 from "../../assets/images/ecommerce-ap.png"
-
+import securewiser from "../../assets/images/securewiser.png";
+import upcomer from "../../assets/images/upcomer.png"
+import eraofwe from "../../assets/images/eraofwe.png"
+import popstack from "../../assets/images/popstack.png"
 const Projects = () => {
   const projectsData = [
     {
-      projectCategory: "Finance App",
-      projectDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-      projectClient: "Andrew NG",
-      projectImg: projImg1,
-      projectRating:"4.8",
-      showcaseLink:"/"
+      projectCategory: "Cybersecurity",
+      projectDescription: "At Securiwiser, we understand the importance of protecting sensitive information and ensuring the safety of students, teachers and staff in the digital world. That's why we launched a cybersecurity solution aimed at supporting the digital transformation efforts of schools in the UK. We committed to providing the best cybersecurity tools and support to schools.",
+      projectClient: "Secure Wiser",
+      projectImg: securewiser,
+      projectRating:"5.0",
+      showcaseLink:"https://www.securiwiser.com/"
     },
     {
-      projectCategory: "E-commerce App",
-      projectDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-      projectClient: "Jack MA",
-      projectImg: projImg2,
+      projectCategory: "Esports App",
+      projectDescription: "Upcomer, a place for people who revere esports not just for the technical prowess these players display, but for the passion they put into the games you love. We aim to capture the past, present and future of esports with storytellers who are dedicated to going deeper than the surface level esports journalism you see today. Upcomer is not here to just tell you what happened. We're going to tell you why it matters, what’s next and how we got to where we are.",
+      projectClient: "Upcomer",
+      projectImg: upcomer,
       projectRating:"5.0",
       reverseOrder:true,
-      showcaseLink:"/"
+      showcaseLink:"https://upcomer.com/"
     },
     {
-      projectCategory: "Accomodation App",
-      projectDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-      projectClient: "Andrew NG",
-      projectImg: projImg3,
-      projectRating:"4.8",
-      showcaseLink:"/"
+      projectCategory: "Cofee Supply Chain",
+      projectDescription: "Era of We believes in the power of sharing knowledge to help others succeed. It will be a group effort to make the coffee industry a livable career for all. want to secure the future of the coffee industry by building a community who believes in the power of transparency and collaboration.",
+      projectClient: "Era of We",
+      projectImg: eraofwe,
+      projectRating:"5.0",
+      showcaseLink:"https://www.eraofwe.com/"
     },
     {
-      projectCategory: "E-commerce App",
-      projectDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-      projectClient: "Jack MA",
-      projectImg: projImg4,
+      projectCategory: "Ai Visual Workspace",
+      projectDescription: "Search, discover and combine live information from all your apps and services, visually. Uncovers the hidden relationships between information, no matter the source. Creates shared understanding that focuses discussions, highlights commitments and accelerates projects",
+      projectClient: "popstack",
+      projectImg: popstack,
       projectRating:"5.0",
       reverseOrder:true,
-      showcaseLink:"/"
+      showcaseLink:"https://www.popstack.ai/"
     }
   ];
 
@@ -59,6 +61,9 @@ const Projects = () => {
             />
           </div>
           ))}
+        </div>
+        <div className="portfolio-button text-center">
+          <button className='text-2xl leading-8 font-mono text-purple-400'><Link href="/portfolio">See My Portfolio For More Projects </Link><span><FontAwesomeIcon icon={faArrowAltCircleRight} className='shake-horizontal'/></span></button>
         </div>
       </section>
     </>

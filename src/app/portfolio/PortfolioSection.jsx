@@ -3,32 +3,31 @@ import "./PortfolioSection.css";
 import Startups from "@/components/Childcomps/Startups";
 import HomeComponentsHeading from "@/components/Childcomps/HomeComponentsHeading";
 import PortfolioProject from "./PortfolioProject";
-import projImg1 from "../../assets/images/app-img1.png";
-import projImg2 from "../../assets/images/ecommerce.png"
-import projImg3 from "../../assets/images/accomodation.png"
-import projImg4 from "../../assets/images/ecommerce-ap.png"
-
+import securewiser from "../../assets/images/securewiser.png";
+import upcomer from "../../assets/images/upcomer.png"
+import eraofwe from "../../assets/images/eraofwe.png"
+import popstack from "../../assets/images/popstack.png"
 const PortfolioSection = () => {
   const pprojects = [
     {
-      ppImage:projImg1,
-      pprojectName:"Finance App",
-      ppLink:"/",
+      ppImage:securewiser,
+      pprojectName:"Secure Wiser",
+      ppLink:"https://www.securiwiser.com/",
     },
     {
-      ppImage:projImg2,
-      pprojectName:"E-commmerce App",
-      ppLink:"/",
+      ppImage:upcomer,
+      pprojectName:"Upcomer - esports App",
+      ppLink:"https://upcomer.com/",
     },
     {
-      ppImage:projImg3,
-      pprojectName:"Accomodation App",
-      ppLink:"/",
+      ppImage:eraofwe,
+      pprojectName:"ERA of WE",
+      ppLink:"https://www.eraofwe.com/",
     },
     {
-      ppImage:projImg4,
-      pprojectName:"Store",
-      ppLink:"/",
+      ppImage:popstack,
+      pprojectName:"popstack",
+      ppLink:"https://www.popstack.ai/",
     },
   ]
   return (
