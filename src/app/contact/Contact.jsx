@@ -1,12 +1,13 @@
 // Contact.js
 import React from "react";
 import "./Contact.css";
-import contactImg from "../../assets/images/journey-man.png";
+import contactImg from "../../assets/images/qa22.png";
 import PageHeading from "@/components/Childcomps/PageHeading/PageHeading";
 import MyAccordionComponent from "@/components/Childcomps/MyAccordianComponent/MyAccordianComponent";
 import HomeComponentsHeading from "@/components/Childcomps/HomeComponentsHeading";
 import Startups from "@/components/Childcomps/Startups";
 import Image from "next/image";
+import Link from "next/link";
 const Contact = () => {
   const accordionData = [
     {
@@ -58,8 +59,10 @@ const Contact = () => {
             <MyAccordionComponent accordionData={accordionData} />
             </div>
             <div className="contact-buttons flex flex-wrap gap-2 items-center">
-            <button className="h-12 w-40 bg-orange-300 text-black text-sm font-medium tracking-wide"><a href="/">Contact Me</a></button>
-            <a href="/" className="text-purple-200 text-sm font-semibold">Message Me On Linkedin</a>
+            <Link href="#footer">
+            <button className="h-12 w-40 bg-orange-300 text-black text-sm font-medium tracking-wide">Contact Me</button>
+            </Link>
+            <Link href="https://www.linkedin.com/in/muhammad-qamar-915b75125/" target="_blank" className="text-purple-200 text-sm font-semibold">Message Me On Linkedin</Link>
             </div>
           </div>
           <div className="contact-image self-end">

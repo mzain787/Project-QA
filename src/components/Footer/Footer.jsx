@@ -1,18 +1,18 @@
-'use client'
-import React, { useState, useEffect } from 'react';
+"use client";
+import React, { useState, useEffect } from "react";
 import "./Footer.css";
-import MyForm from '../Childcomps/MyForm/MyForm';
-import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import MyForm from "../Childcomps/MyForm/MyForm";
+import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../assets/images/logo.png";
 import {
-    faFacebook,
-    faTwitter,
-    faInstagram,
-    faLinkedin,
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import Link from 'next/link';
+import Link from "next/link";
 
 const Footer = () => {
   const [showTopButton, setShowTopButton] = useState(false);
@@ -26,11 +26,11 @@ const Footer = () => {
     };
 
     // Attach the event listener
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     // Cleanup the event listener on component unmount
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -38,31 +38,55 @@ const Footer = () => {
     // Smooth scroll to the top
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   return (
-    <footer>
+    <footer id="footer">
       <div className="wrapper">
         <div className="footer-top flex items-center gap-10 mb-14">
-        <div className="footer-content">
-        <h3 className='text-purple-200 font-semibold text-base tracking-widest mb-10'>😎  INTERESTED?</h3>
-        <h2 className='footer-heading text-purple-200 font-bold mb-10'>Let&#39;s <span className='text-orange-300'>Connect!</span></h2>
-        <p className='text-purple-200 text-base font-normal tracking-wider mb-10'>I help people and team worldwide. I can help you build your next digital product so fell to contact me. Sooner you write is better for both of us.</p>
-        <div className="footer-contact-details text-purple-200 text-base font-medium tracking-wider">
-            <p className="email mb-2"><FontAwesomeIcon className='text-orange-300' icon={faPhone} /> hello@yoursite.com</p>
-            <p className="ph-no"><FontAwesomeIcon className='text-orange-300' icon={faEnvelope} /> +671 873-359-73</p>
-        </div>
-        </div>
+          <div className="footer-content">
+            <h3 className="text-purple-200 font-semibold text-base tracking-widest mb-10">
+              😎 INTERESTED?
+            </h3>
+            <h2 className="footer-heading text-purple-200 font-bold mb-10">
+              Let&#39;s <span className="text-orange-300">Connect!</span>
+            </h2>
+            <p className="text-purple-200 text-base font-normal tracking-wider mb-10">
+              I help people and team worldwide. I can help you build your next
+              digital product so fell to contact me. Sooner you write is better
+              for both of us.
+            </p>
+            <div className="footer-contact-details text-purple-200 text-base font-medium tracking-wider">
+              <p className="email mb-2">
+                <FontAwesomeIcon
+                  className="text-orange-300 mr-2"
+                  icon={faEnvelope}
+                />
+                <a href="mailto:muhammadqamar111@gmail.com">
+                   muhammadqamar111@gmail.com
+                </a>
+              </p>
+              <p className="ph-no">
+                <FontAwesomeIcon className="text-orange-300 mr-2" icon={faPhone} />
+                <a href="tel:+923464198330">+923464198330</a>
+              </p>
+            </div>
+          </div>
           <div className="footer-form">
-            <MyForm/>
+            <MyForm />
           </div>
         </div>
         <div className="footer-bottom flex justify-between items-center">
           <div className="footer-bottom-left flex gap-4 items-center">
-            <a href="/"><Image src={logo} alt="logo-img" className='h-12 w-32'/></a>
-            <p className="copyright text-purple-400">© 2024 Crevidy <span className='text-orange-300'>by Deverust Studio</span></p>
+            <a href="/">
+              <Image src={logo} alt="logo-img" className="h-12 w-32" />
+            </a>
+            <p className="copyright text-purple-400">
+              © 2024 Crevidy{" "}
+              <span className="text-orange-300">by Deverust Studio</span>
+            </p>
           </div>
           <div className="footer-bottom-right">
             <div className="flex items-center">
@@ -95,7 +119,9 @@ const Footer = () => {
         </div>
       </div>
       <button
-        className={`top-button p-4 fixed bg-gray-800 text-purple-400 tracking-wide font-bold right-3 bottom-4 ${showTopButton ? 'visible' : 'invisible'}`}
+        className={`top-button p-4 fixed bg-gray-800 text-purple-400 tracking-wide font-bold right-3 bottom-4 ${
+          showTopButton ? "visible" : "invisible"
+        }`}
         onClick={scrollToTop}
       >
         Top

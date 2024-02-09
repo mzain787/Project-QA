@@ -20,7 +20,6 @@ const Intro = () => {
      <div className="intro-top-right">
         <p className='text-purple-200 text-base font-medium mb-5 tracking-wide'>I have had the privilege to work on a variety of exciting projects that have honed my skills and expanded my horizons in the world of web development. </p>
         <div className='flex items-center gap-5'>
-        <a href="/" className='text-orange-300 pb-1 border-b-2 border-orange-300 text-sm font-semibold tracking-wide'>Download CV</a>
         <Hirebtn/>
         </div>
      </div>

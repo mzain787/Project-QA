@@ -7,6 +7,7 @@ import git from "../../assets/images/git.svg"
 import gitHub from "../../assets/images/github-desktop.svg"
 import node from "../../assets/images/nodejs.svg"
 import redux from "../../assets/images/redux-original.svg"
+import aws from "../../assets/images/aws.svg"
 import Experties from '@/components/Childcomps/Experties'
 import "./About.css"
 import Startups from '@/components/Childcomps/Startups'
@@ -37,6 +38,10 @@ const tools =[
     {
       toolImage:redux,
       toolName:"Redux"
+    },
+    {
+      toolImage:aws,
+      toolName:"AWS"
     },
 ]
 const skillsData = [
@@ -75,6 +80,7 @@ const Myabilities = () => {
             ))}
             <Hirebtn/>
             </div>
+            
         </div>
        
         </div>

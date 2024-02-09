@@ -57,8 +57,7 @@ const closeMenu = () => {
   const pages = [
     { href: "/contact", name: "Contact" },
     { href: "/portfolio", name: "Portfolio" },
-    { href: "/testimonials", name: "Testimonials" },
-    { href: "/team", name: "My Team" }
+    { href: "/testimonials", name: "Testimonials" }
   ];
   const pathname = usePathname();
 

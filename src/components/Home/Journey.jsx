@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Home/Home.css"
-import manPic from "../../assets/images/journey-man.png"
+import manPic from "../../assets/images/qa22.png"
 import { MyExperience } from '../Childcomps/Myskill'
 import HomeComponentsHeading from '../Childcomps/HomeComponentsHeading'
 import Image from 'next/image'
@@ -40,7 +40,7 @@ const Journey = () => {
   ];
   return (
     <section className="my-experience-journey">
-     <div className="wrapper flex justify-start gap-5 items-end journey-main">
+     <div className="wrapper flex justify-center gap-5 items-end journey-main">
         <div className="journey-image">
             <Image src={manPic} alt="man-image" className='w-full'/>
         </div>
