@@ -54,7 +54,7 @@ const closeMenu = () => {
     { href: "/about", name: "ABOUT ME" },
   ];
   const pages = [
-    { href: "/contact", name: "Contact" },
+    { href: "/contact", name: "Contact ME" },
     { href: "/portfolio", name: "Portfolio" },
     { href: "/testimonials", name: "Testimonials" }
   ];

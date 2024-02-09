@@ -5,21 +5,16 @@ const Skills = () => {
   const skills = [
     {
       number: "01",
-      skill: "Adobe Photoshop",
-      description: "Proficient in Adobe Photoshop, skilled in creating visually appealing designs and graphics for various digital platforms with precision and creativity."
-    },
-    {
-      number: "02",
-      skill: "Web Design",
-      description: "Experienced in designing intuitive and aesthetically pleasing websites, focusing on user experience and functionality to deliver engaging online experiences."
-    },
-    {
-      number: "03",
-      skill: "User Interface Design",
+      skill: "UI Design",
       description: "Adept at crafting user-centric interfaces, ensuring seamless interaction between users and digital products through thoughtful layout and visual design."
     },
     {
-      number: "04",
+      number: "02",
+      skill: "Frontend Dev",
+      description: "Proficient in developing responsive and dynamic user interfaces using HTML, CSS, and JavaScript, with a focus on creating engaging and interactive web experiences for users."
+    },
+    {
+      number: "03",
       skill: "Full Stack Dev",
       description: "Well-versed in both front-end and back-end development, capable of building end-to-end web applications from conceptualization to deployment using a variety of technologies."
     },
@@ -29,10 +24,17 @@ const Skills = () => {
       description: "Skilled in extracting and parsing data from various sources on the web, utilizing automated tools and scripts to gather valuable information for analysis and decision-making."
     },
     {
+      number: "04",
+      skill: "Adobe Photoshop",
+      description: "Proficient in Adobe Photoshop, skilled in creating visually appealing designs and graphics for various digital platforms with precision and creativity."
+    },
+    {
       number: "06",
-      skill: "Frontend Dev",
-      description: "Proficient in developing responsive and dynamic user interfaces using HTML, CSS, and JavaScript, with a focus on creating engaging and interactive web experiences for users."
-    }
+      skill: "API Integration",
+      description: "Proficient in API connections, I possess a strong command over integrating various systems through RESTful APIs. Whether it's fetching data from external sources or building custom APIs for seamless integration within applications, I excel in designing efficient and reliable connections."
+    },
+    
+   
   ];
 
   return (

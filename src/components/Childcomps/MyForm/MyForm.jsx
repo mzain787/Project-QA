@@ -9,25 +9,13 @@ const MyForm = () => {
     console.log(values);
   };
 
-  // Define the options array
-  const options = [
-    { value: 'UI Design', label: 'UI Design' },
-    { value: 'UI Animation', label: 'UI Animation' },
-    { value: 'UX Design', label: 'UX Design' },
-    { value: 'UX Research', label: 'UX Research' },
-    { value: 'Wireframing', label: 'Wireframing' },
-    { value: 'Micro Interaction', label: 'Micro Interaction' },
-    { value: 'Design System', label: 'Design System' },
-    { value: 'All In One', label: 'All In One' },
-  ];
-
   return (
     <Formik
       initialValues={{
         name: '',
         email: '',
         phone: '',
-        selectedOption: '',
+        interest: '',
         message: '',
       }}
       onSubmit={handleSubmit}
@@ -50,17 +38,7 @@ const MyForm = () => {
           </div>
           <div className='flex flex-col gap-2 w-full'>
             <label htmlFor="selectedOption" className='text-purple-300 text-base font-medium'>I&#39;m interested in <span className='text-xs text-red-700'>✳</span></label>
-            <select
-              id="selectedOption"
-              name="selectedOption"
-              className="field text-purple-400"
-              required
-            >
-              <option value="" disabled>Select</option>
-              {options.map(option => (
-                <option key={option.value} value={option.value}>{option.label}</option>
-              ))}
-            </select>
+            <Field type="text" id="selectedOption" name="interest" placeholder="e.g. UI Design" className="field text-purple-400" required />
           </div>
         </div>
         <div className='flex flex-col mb-5'>
