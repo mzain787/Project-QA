@@ -7,8 +7,13 @@ import Testimonials from './Testimonials.jsx'
 import Projects from './Projects.jsx'
 import "./Home.css"
 import AosAnimation from '@/utils/AosAnimation.js'
+import Head from 'next/head.js'
 const Homepage = () => {
   return (
+    <>
+    <Head>
+      <title>Home Page</title>
+    </Head>
     <div className='bounce-in-top'>
     <Hero/>
     <Intro/>
@@ -18,7 +23,9 @@ const Homepage = () => {
     <Testimonials/>
     </AosAnimation>
     <Projects/>
-    </div>
+    </div> 
+    </>
+   
   )
 }
 

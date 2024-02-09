@@ -5,6 +5,11 @@ import Myintro from './Myintro'
 import MyWork from './MyWork'
 import Myabilities from './Myabilities'
 import AosAnimation from '@/utils/AosAnimation'
+export const metadata = {
+  title:{
+    absolute:"About Me | Muhammad Qammar"
+  }
+}
 const About= () => {
   return (
       <div className='relative'>

@@ -2,16 +2,22 @@ import "./globals.css";
 import Sidebar from "../components/Sidebar/Sidebar";
 import Header from "../components/Header/Header"
 import Footer from "../components/Footer/Footer"
-export const metadata = {
-  title: "Muhammad Qammar",
-  description: "Full-Stack Web App Developer",
-};
 
+// export const metadata = {
+//   title: "Muhammad Qammar",
+//   description: "Full-Stack Web App Developer",
+// };
+export const metadata = {
+  title:{
+    default:"Muhammad Qammar"
+  },
+  description:"Full Stack Web App Developer"
+}
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header/>        
+        <Header/> 
         <Sidebar />
         {children}
         <Footer/>
