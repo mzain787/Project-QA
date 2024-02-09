@@ -17,7 +17,7 @@ const Customers = () => {
         </div>
         <div className="ceo">
             <h3 className="ceo-name text-orange-300 font-medium text-base">Muhammad Qammar</h3>
-            <p className='text-sm text-purple-200 tracking-wide font-semibold'>CEO</p>
+            <p className='text-sm text-purple-200 tracking-wide font-semibold'>CEO QA Enterprise</p>
         </div>
         <div className="customer-images flex items-end">
             <div className="customer-images-part1">

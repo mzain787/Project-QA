@@ -7,8 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../assets/images/logo.png";
 import {
-  faFacebook,
-  faTwitter,
+  faXTwitter,
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
@@ -84,31 +83,25 @@ const Footer = () => {
               <Image src={logo} alt="logo-img" className="h-12 w-32" />
             </a>
             <p className="copyright text-purple-400">
-              © 2024 Crevidy{" "}
-              <span className="text-orange-300">by Deverust Studio</span>
+              © 2024 {" "}
+              <span className="text-orange-300">QA Enterprise</span>
             </p>
           </div>
           <div className="footer-bottom-right">
             <div className="flex items-center">
-              <Link href="/" className="text-white mx-2">
+              <Link href="/" target="_blank" className="text-white mx-2">
                 <FontAwesomeIcon
-                  icon={faFacebook}
-                  className="text-xl text-purple-200 hover:text-orange-300 "
-                />
-              </Link>
-              <Link href="/" className="text-white mx-2">
-                <FontAwesomeIcon
-                  icon={faTwitter}
+                  icon={faXTwitter}
                   className="text-xl text-purple-200 hover:text-orange-300"
                 />
               </Link>
-              <Link href="/" className="text-white mx-2">
+              <Link href="https://www.instagram.com/muhammad.qammar/?hl=en" target="_blank" className="text-white mx-2">
                 <FontAwesomeIcon
                   icon={faInstagram}
                   className="text-xl text-purple-200 hover:text-orange-300"
                 />
               </Link>
-              <Link href="/" className="text-white mx-2">
+              <Link href="https://www.linkedin.com/in/muhammad-qamar-915b75125/" target="_blank" className="text-white mx-2">
                 <FontAwesomeIcon
                   icon={faLinkedin}
                   className="text-xl text-purple-200 hover:text-orange-300"

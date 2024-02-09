@@ -1,8 +1,8 @@
 import React from 'react'
 import HomeComponentsHeading from '@/components/Childcomps/HomeComponentsHeading'
-import workImg3 from "../../assets/images/blog-img2.png"
+import workImg3 from "../../assets/images/coding-image.jpg"
 import workImg2 from "../../assets/images/blog-img1.png"
-import workImg4 from "../../assets/images/blog-img3.png"
+import workImg4 from "../../assets/images/laptop-man.jpg"
 import workImg1 from "../../assets/images/blog-img4.png"
 import Image from 'next/image'
 const MyWork = () => {

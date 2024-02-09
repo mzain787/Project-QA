@@ -6,8 +6,7 @@ import { FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { faPlay , faArrowLeft, faTimes} from "@fortawesome/free-solid-svg-icons";
 import {
-  faFacebook,
-  faTwitter,
+  faXTwitter,
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
@@ -15,9 +14,9 @@ import logo from "../../assets/images/logo.png"
 import sidebarimg1 from "../../assets/images/sidebar-img1.png"
 import sidebarimg2 from "../../assets/images/sidebar-img2.png"
 import sidebarimg3 from "../../assets/images/sidebar-img3.png"
-import sidebarimg4 from "../../assets/images/sidebar-img4.png"
-import sidebarimg5 from "../../assets/images/sidebar-img5.png"
-import sidebarimg6 from "../../assets/images/sidebar-img6.png"
+import sidebarimg4 from "../../assets/images/coding-image.jpg"
+import sidebarimg5 from "../../assets/images/laptop-man.jpg"
+import sidebarimg6 from "../../assets/images/sidebar-img4.png"
 import ProfileModal from "../Childcomps/ProfileModal/ProfileModal";
 import Image from "next/image";
 
@@ -109,7 +108,7 @@ const Sidebar = () => {
          <div className="brand-details mb-16">
           <Image src={logo} alt="footer-logo" className="h-12 w-32 mb-16" />
           <h3 className="text-purple-200 text-2xl mb-7 font-medium">Contact Me Today</h3>
-          <h4 className="text-orange-300 text-xl font-semibold">hi@crevidy.dom</h4>
+          <Link className="text-orange-300 text-lg tracking-wider font-medium " href="mailto:muhammadqamar111@gmail.com">muhammadqamar111@gmail.com</Link>
          </div>
          <div className="meet-me-section gap-1 mb-16">
           <h2 className="text-purple-200 tracking-wider text-sm font-bold mb-5">MEET ME</h2>
@@ -126,25 +125,19 @@ const Sidebar = () => {
          <div className="social-media-section">
           <h2 className="text-base font-semibold tracking-widest text-purple-200 mb-6">FOLLOW ME</h2>
           <div className="flex items-center">
-          <Link href="/" className="text-white mx-2">
+          <Link href="/" target="_blank" className="text-white mx-2">
             <FontAwesomeIcon
-              icon={faFacebook}
-              className="text-xl text-purple-200 hover:text-orange-300 "
-            />
-          </Link>
-          <Link href="/" className="text-white mx-2">
-            <FontAwesomeIcon
-              icon={faTwitter}
+              icon={faXTwitter}
               className="text-xl text-purple-200 hover:text-orange-300"
             />
           </Link>
-          <Link href="/" className="text-white mx-2">
+          <Link href="https://www.instagram.com/muhammad.qammar/?hl=en" target="_blank" className="text-white mx-2">
             <FontAwesomeIcon
               icon={faInstagram}
               className="text-xl text-purple-200 hover:text-orange-300"
             />
           </Link>
-          <Link href="/" className="text-white mx-2">
+          <Link href="https://www.linkedin.com/in/muhammad-qamar-915b75125/" target="_blank" className="text-white mx-2">
             <FontAwesomeIcon
               icon={faLinkedin}
               className="text-xl text-purple-200 hover:text-orange-300"

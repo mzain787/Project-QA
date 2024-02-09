@@ -19,7 +19,6 @@ const Myintro = () => {
         </div> 
         <div className="intro-buttons flex gap-3 items-center">
           <Hirebtn/>
-          <button className='text-orange-300 font-medium text-sm pb-1 border-b-2 border-orange-300'><a href="/">Download CV</a></button>
         </div>
       </div>
       </div>
