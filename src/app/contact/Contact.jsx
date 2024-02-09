@@ -65,7 +65,7 @@ const Contact = () => {
             <Link href="https://www.linkedin.com/in/muhammad-qamar-915b75125/" target="_blank" className="text-purple-200 text-sm font-semibold">Message Me On Linkedin</Link>
             </div>
           </div>
-          <div className="contact-image self-end">
+          <div className="contact-image self-center">
             <Image src={contactImg} alt="contact-image" className="w-full" />
           </div>
         </div>
