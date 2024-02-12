@@ -141,7 +141,7 @@
   font-family: "Syne", sans-serif;
 }
 .hero-section {
-  padding: 160px 40px 50px 150px;
+  padding: 160px 40px 50px 80px;
 }
 .hero-items {
   overflow: -moz-hidden-unscrollable;
@@ -173,7 +173,7 @@
 }
 /* Intro-Section CSS */
 .basic-padding {
-  padding: 80px 80px 80px 100px;
+  padding: 80px;
 }
 .intro-video-back-img {
   position: relative;
@@ -269,11 +269,8 @@
   background-color: #1a1826;
 }
 .hero-startups img {
-  width: 15%;
+  width: 50%;
 }
-
-
-
 @media (max-width: 1280px) {
   /* Hero Section */
   .hero-section {
@@ -298,7 +295,7 @@
     right: 50px;
   }
   .basic-padding {
-    padding: 60px 60px 60px 100px;
+    padding: 60px;
   }
   /* MySkill CSS */
   .skill-heading {
@@ -344,7 +341,7 @@
     background-color: #1a1826;
   }
   .hero-startups img {
-    width: 20%;
+    width: 50%;
   }
 }
 @media (max-width: 768px) {

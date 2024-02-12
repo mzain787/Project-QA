@@ -1,25 +1,28 @@
 "use client";
 import React from "react";
 import "../Home/Home.css";
-import fiverr from "../../assets/images/fi.png";
+import github from "../../assets/images/github-light.svg";
 import upwork from "../../assets/images/up.png";
 import man from "../../assets/images/qa22.png";
 import AOSAnimation from "@/utils/AosAnimation";
+import topRated from "../../assets/images/top-rated.svg"
 import Image from "next/image";
+import Link from "next/link";
 const Hero = () => {
   return (
     <>
       <section className="hero-section  wrapper home-page relative">
-        <div className="upwork-fiverr flex items-center gap-3 p-12 shake-vertical">
-          <p className="text-pruple-200 tracking-wide text-base font-medium">
-            Top Rated At
-          </p>
-          <Image
-            src={fiverr}
-            alt="fiverr-logo"
+        <div className="upwork-fiverr flex items-center gap-3 p-12 shake-vertical flex-wrap">
+          <p className="text-pruple-200 tracking-wide text-base font-medium flex items-center gap-2">
+            <span> <Image
+            src={topRated}
+            alt="top-rated-star"
             className="w-10 h-10 shake-vertical"
-          />
-          <a
+          /></span>
+            Top Rated Plus
+          </p>
+          <div className="flex items-center gap-2">
+          <Link
             href=
             "https://www.upwork.com/freelancers/~014b6ad79986046218"
             target="_blank"
@@ -30,7 +33,20 @@ const Hero = () => {
             alt="upwork-logo"
             className="w-10 h-10 shake-vertical"
           />
-          </a>   
+          </Link>   
+          <Link
+            href=
+            "https://github.com/muhammadqamar"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+            src={github}
+            alt="github-link"
+            className="w-10 h-10 shake-vertical"
+          />
+          </Link>
+          </div> 
         </div>
         <div className="hero-items">
           <div>
@@ -48,12 +64,6 @@ const Hero = () => {
             </div>
             <hr className="hr-line"/>
             <div className="brand-achievements flex gap-10 flex-wrap items-center">
-              {/* <div className="achievement">
-                <p className="text-4xl font-bold text-purple-200 mb-3 tracking-wider numbers">
-                  45
-                </p>
-                <p className="text-purple-400 text-base font-medium">Awards</p>
-              </div> */}
               <div className="achievement">
                 <p className="text-4xl font-bold text-purple-200 mb-3 tracking-wider numbers">
                   200+
@@ -64,10 +74,18 @@ const Hero = () => {
               </div>
               <div className="achievement">
                 <p className="text-4xl font-bold text-purple-200 mb-3 tracking-wider numbers">
-                  8
+                  6+
                 </p>
                 <p className="text-purple-400 text-base font-medium">
                   Years Experience
+                </p>
+              </div>
+              <div className="achievement">
+                <p className="text-4xl font-bold text-purple-200 mb-3 tracking-wider numbers">
+                  20k+
+                </p>
+                <p className="text-purple-400 text-base font-medium">
+                  Working Hours
                 </p>
               </div>
               <div className="achievement">
@@ -80,7 +98,6 @@ const Hero = () => {
               </div>
             </div>
           </div>
-
           <div className="hero-image">
             <AOSAnimation type="fade-right" easing="linear" duration={300}>
               <Image className="w-full" src={man} alt="man-imge" />

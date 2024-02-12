@@ -55,7 +55,7 @@
 }
 
 .component-padding {
-  padding: 80px 80px 80px 100px;
+  padding: 80px;
 }
 .portfolio-main-heading{
   font-size: 64px;
@@ -79,7 +79,7 @@
 
 @media (max-width: 992px) {
   .component-padding {
-    padding: 60px 60px 60px 100px;
+    padding: 60px;
   }
   .portfolio-main-heading{
     font-size: 36px;

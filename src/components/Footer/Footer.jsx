@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import logo from "../../assets/images/logo.png";
 import {
-  faXTwitter,
+  faYoutube,
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
@@ -57,7 +57,7 @@ const Footer = () => {
               digital product so fell to contact me. Sooner you write is better
               for both of us.
             </p>
-            <div className="footer-contact-details text-purple-200 text-base font-medium tracking-wider">
+            <div className="footer-contact-details text-purple-200 text-sm font-medium tracking-wider">
               <p className="email mb-2">
                 <FontAwesomeIcon
                   className="text-orange-300 mr-2"
@@ -89,9 +89,9 @@ const Footer = () => {
           </div>
           <div className="footer-bottom-right">
             <div className="flex items-center">
-              <Link href="/" target="_blank" className="text-white mx-2">
+              <Link href="https://www.youtube.com/@muhammadqamar7133" target="_blank" className="text-white mx-2">
                 <FontAwesomeIcon
-                  icon={faXTwitter}
+                  icon={faYoutube}
                   className="text-xl text-purple-200 hover:text-orange-300"
                 />
               </Link>
@@ -112,7 +112,7 @@ const Footer = () => {
         </div>
       </div>
       <button
-        className={`top-button p-4 fixed bg-gray-800 text-purple-400 tracking-wide font-bold right-3 bottom-4 ${
+        className={`top-button p-4 fixed bg-gray-800 text-purple-400 tracking-wide font-bold left-3 bottom-4 ${
           showTopButton ? "visible" : "invisible"
         }`}
         onClick={scrollToTop}

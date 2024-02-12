@@ -117,11 +117,11 @@ const Testimonials = ({showHeading = true}) => {
         </div>
         <div className="clients-section-right">
           <div className="standard border-b-2 border-gray-900 pb-4 mb-4">
-            <p className="text-purple-200 text-xl tracking-wide font-semibold mb-2">100%</p>
+            <p className="text-purple-200 text-xl tracking-wide font-semibold mb-2">99%</p>
             <h3 className="text-base text-purple-300 tracking-wide font-medium">Satisfaction Rate</h3>
           </div>
           <div className="standard border-b-2 border-gray-900 pb-4 mb-4">
-            <p className="text-purple-200 text-xl tracking-wide font-semibold mb-2">1%</p>
+            <p className="text-purple-200 text-xl tracking-wide font-semibold mb-2">75%</p>
             <h3 className="text-base text-purple-300 tracking-wide font-medium">Repeat Order</h3>
           </div>
           <div className="standard border-b-2 border-gray-900 pb-4 mb-8">
