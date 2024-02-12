@@ -3,26 +3,33 @@ import React from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Home/Home.css";
-import startup1 from "../../assets/images/startup1.svg";
-import startup2 from "../../assets/images/startup2.svg";
-import startup3 from "../../assets/images/startup3.svg";
-import startup4 from "../../assets/images/startup4.svg";
-import startup6 from "../../assets/images/startup6.svg";
+import client1 from "../../assets/images/startup1.svg";
+import client2 from "../../assets/images/startup2.svg";
+import client3 from "../../assets/images/startup3.svg";
+import client4 from "../../assets/images/startup4.svg";
+import client5 from "../../assets/images/startup5.svg";
+import client6 from "../../assets/images/startup6.svg";
+import client7 from "../../assets/images/client7.svg";
+import client8 from "../../assets/images/client8.png";
+import client9 from "../../assets/images/client9.webp"
+import client10 from "../../assets/images/client10.svg"
+import client11 from "../../assets/images/client11.png"
 import Image from 'next/image';
 import Slider from "react-slick";
 
 const Startups = () => {
-  const images = [startup1, startup2, startup3, startup4, startup6];
+  const images = [client1, client2, client3, client4, client5, client6, client7, client8,client9,client10,client11];
 
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 5,
-    slidesToScroll: 1,
     arrows:false,
     autoplay:true,
-    autoplaySpeed:500,
+    autoplaySpeed:2000,
+     cssEase: "linear",
+
     responsive: [
       {
         breakpoint: 1024,
@@ -35,7 +42,6 @@ const Startups = () => {
         breakpoint: 600,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
           initialSlide: 1
         }
       }

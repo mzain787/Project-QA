@@ -6,6 +6,7 @@ import upwork from "../../assets/images/up.png";
 import man from "../../assets/images/qa22.png";
 import AOSAnimation from "@/utils/AosAnimation";
 import topRated from "../../assets/images/top-rated.svg"
+import iconLink from "../../assets/images/link-arrow.svg"
 import Image from "next/image";
 import Link from "next/link";
 const Hero = () => {
@@ -58,9 +59,13 @@ const Hero = () => {
                 Talented Developer{" "}
                 <span className="text-orange-300">That Help You</span>
               </h1>
-              <h2 className="mb-12 text-base font-normal tracking-wide text-purple-200">
+              <h2 className="mb-8 text-base font-normal tracking-wide text-purple-200">
               My expertise lies in frontend and full stack development, where I bring projects to life with creativity and precision. Additionally, I have a strong command of Adobe Photoshop and web designing principles, allowing me to create visually stunning and user-friendly interfaces that leave a lasting impression.
               </h2>
+              <button className="flex items-center gap-2 bg-orange-300 p-3">
+              <Link href="/portfolio" className=' text-black text-base font-medium'>View My Portfolio</Link>
+              <Image src={iconLink} alt="icon" width={18} heigth={18}/>
+              </button>
             </div>
             <hr className="hr-line"/>
             <div className="brand-achievements flex gap-10 flex-wrap items-center">
