@@ -13,9 +13,9 @@ export default function RootLayout({ children }) {
       <body>  
         <Header/>
         {/* WhatsApp widget div */}
-        <div className="elfsight-app-9aac4257-e515-4c3b-aabf-815711ea66e0" data-elfsight-app-lazy />
         {children}
         <Footer/>
+        <div className="elfsight-app-9aac4257-e515-4c3b-aabf-815711ea66e0" data-elfsight-app-lazy />
         <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer />    
       </body>
     </html>

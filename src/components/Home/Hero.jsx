@@ -53,11 +53,11 @@ const Hero = () => {
           <div>
             <div className="hero-content">
               <p className="text-sm font-semibold text-purple-200 mb-10">
-                👋 DEVELOPING THINGS FOR HUMAN
+                👋 EMPOWERING HUMANITY THROUGH WEB INNOVATION.
               </p>
               <h1 className="hero-heading text-purple-200 mb-12 bounce-top">
-                Talented Developer{" "}
-                <span className="text-orange-300">That Help You</span>
+              Transforming Visions into{" "}
+                <span className="text-orange-300">Reality</span>
               </h1>
               <h2 className="mb-8 text-base font-normal tracking-wide text-purple-200">
               My expertise lies in frontend and full stack development, where I bring projects to life with creativity and precision. Additionally, I have a strong command of Adobe Photoshop and web designing principles, allowing me to create visually stunning and user-friendly interfaces that leave a lasting impression.
